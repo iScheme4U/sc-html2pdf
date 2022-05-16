@@ -31,6 +31,8 @@ from sc_config import ConfigUtils
 from sc_html2pdf import PROJECT_NAME, __version__
 import argparse
 
+import weasyprint
+
 
 class Runner(metaclass=Singleton):
 
@@ -43,12 +45,17 @@ class Runner(metaclass=Singleton):
         logging.getLogger(__name__).info("arguments {}".format(args))
         logging.getLogger(__name__).info("program {} version {}".format(PROJECT_NAME, __version__))
         logging.getLogger(__name__).debug("configurations {}".format(self._config.as_dict()))
+        url = args.src
+        output_file = args.dest
+        weasyprint.HTML(url).write_pdf(output_file)
         return 0
 
 
 def main():
     try:
         parser = argparse.ArgumentParser(description='A simple python project transform html to pdf')
+        parser.add_argument('--src', required=True)
+        parser.add_argument('--dest', required=True)
         args = parser.parse_args()
         state = Runner().run(args=args)
     except Exception as e:
