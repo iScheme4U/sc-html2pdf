@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 #
-# Copyright (c) 2021 Scott Lau
+# Copyright (c) 2022 Scott Lau
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -22,4 +22,4 @@
 
 __version__ = "0.0.1"
 
-PROJECT_NAME = 'sc-python-templates'
+PROJECT_NAME = 'sc-html2pdf'

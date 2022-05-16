@@ -1,6 +1,6 @@
-.. image:: https://badge.fury.io/py/sc-python-templates.svg
-    :target: https://badge.fury.io/py/sc-python-templates
-.. image:: https://img.shields.io/pypi/pyversions/sc-python-templates
+.. image:: https://badge.fury.io/py/sc-html2pdf.svg
+    :target: https://badge.fury.io/py/sc-html2pdf
+.. image:: https://img.shields.io/pypi/pyversions/sc-html2pdf
     :alt: PyPI - Python Version
 
 A simple Python project sample structure
@@ -14,7 +14,7 @@ Installation
 
 It is possible to install the tool with `pip`::
 
-    pip install sc-python-templates
+    pip install sc-html2pdf
 
 Configuration
 -------------

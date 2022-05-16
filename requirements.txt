@@ -1,2 +1,3 @@
 sc-utilities>=0.0.7
 sc-config>=0.0.11
+weasyprint>=55.0

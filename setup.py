@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # The MIT License (MIT)
 #
-# Copyright (c) 2021 Scott Lau
+# Copyright (c) 2022 Scott Lau
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -45,22 +45,22 @@ with open('README.rst', encoding="utf-8") as fd:
     readme = fd.read()
 
 setup(
-    name='sc-python-templates',
-    version=get_version("sc_templates/__init__.py"),
-    url='https://github.com/Scott-Lau/sc-python-templates',
+    name='sc-html2pdf',
+    version=get_version("sc_html2pdf/__init__.py"),
+    url='https://github.com/Scott-Lau/sc-html2pdf',
     packages=find_packages(),
     author='Scott Lau',
     author_email='exceedego@126.com',
     license='MIT',
     platforms='POSIX',
-    description='template python project',
+    description='A simple python project transform html to pdf',
     long_description=readme,
     keywords=(
-        'python template'
+        'python html pdf'
     ),
     entry_points={
         'console_scripts': [
-            'sc-python-templates=sc_templates.main:main',
+            'sc-html2pdf=sc_html2pdf.main:main',
         ],
     },
     classifiers=[
@@ -78,9 +78,10 @@ setup(
     install_requires=[
         'sc-utilities>=0.0.7',
         'sc-config>=0.0.11',
+        'weasyprint>=55.0',
     ],
     package_data={
-        'sc_templates': ['tests/sample_config/*'],
+        'sc_html2pdf': ['tests/sample_config/*'],
     },
     include_package_data=True,
 )

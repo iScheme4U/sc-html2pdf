@@ -1,7 +1,6 @@
-#!/usr/bin/env python
 # The MIT License (MIT)
 #
-# Copyright (c) 2021 Scott Lau
+# Copyright (c) 2022 Scott Lau
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -20,13 +19,3 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-
-# NOTE: This binary is provided for convenience.  It is nice to be able to run
-# the checks from the repository.  This is not included on the releases.  We
-# are using entry_points mechanism on the setup.py.
-
-from sys import exit
-
-from sc_templates.main import main
-
-exit(main())
